@@ -129,6 +129,17 @@ ul {
   display: flex;
   align-items: center;
 }
+.header-list-link {
+  display: flex;
+}
+.header-contact-mail {
+  fill: var(--tittle-text-color);
+  margin-right: 10px;
+}
+.header-contact-mail:hover,
+.header-contact-mail:focus {
+  fill: var(--acent-color);
+}
 
 .contact-number,
 .contact-mail {
@@ -314,6 +325,45 @@ ul {
 .social-icons {
   fill: #afb1b8;
 }
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-link-list {
+  margin-top: 50px;
+}
+.clients-link-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+.clients-icons {
+  fill: #afb1b8;
+}
+.clients-link:hover .clients-icons,
+.clients-link:focus .clients-icons {
+  fill: var(--acent-color);
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--acent-color);
+}
 
 /*END MAIN SECTION*/
 
@@ -323,6 +373,9 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 15px;
+}
+.logo-adress-footer {
+  margin-right: 70px;
 }
 .footer-logo {
   color: var(--light-color);
@@ -340,7 +393,9 @@ ul {
 .footer-list:not(:last-child) {
   margin-bottom: 9px;
 }
-
+.join-footer {
+  margin-top: 12px;
+}
 .adress-link {
   font-size: 14px;
   line-height: 1.71;
@@ -358,6 +413,41 @@ ul {
   color: var(--acent-color);
 }
 
+.footer-title {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+
+.social-list-footer {
+  display: flex;
+}
+.social-list-link-footer:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+}
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: var(--acent-color);
+}
+.social-icons-footer {
+  fill: var(--light-color);
+}
+.footer {
+  display: flex;
+  justify-content: left;
+}
 /*END FOOTER*/
 
 /*====================PORTFOLIO================*/
@@ -381,6 +471,7 @@ ul {
   border: 1px solid var(--background-color-bnt-light);
   padding: 6px 12px;
 }
+
 .portfolio-list:not(:last-child) {
   margin-right: 8px;
 }
@@ -389,6 +480,10 @@ ul {
   font-family: inherit;
   background-color: var(--acent-color);
   color: var(--light-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border-color: var(--acent-color);
 }
 .examples-list {
   display: flex;
